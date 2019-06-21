@@ -6,6 +6,13 @@
     <meta name="description" content="Розробка веб сайтів. Створення нових проектів та підтримка існуючих">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="keywords"
+          content="Web It - створення та розробка веб сайтів"/>
+    <meta name="description"
+          content="Івано - Франківськ. Створення та розробка веб сайтів. Створення нових та підтримка існуючих проектів"/>
+    <meta http-equiv="content-language" content="ru">
+    <link href="img/icon/favicon.png" rel="shortcut icon" type="image/x-icon"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -68,17 +75,19 @@
                 <div class="one_section">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6 white-text text-center text-md-left">
+                            <div class="col-md-6 white-text text-center text-md-left wow slideInLeft">
                                 <h1 class="display-4 font-weight-bold text-light text-uppercase">Web IT Studio</h1>
                                 <hr class="hr-light">
-                                <p class="white-text"><strong>Створення та розробка веб сайтів. Розробка нових та
-                                    підтримка
-                                    існуючих проектів.</strong></p>
-                                <a class="btn btn-primary btn-lg btn-outline-light waves-effect mt-2"
-                                   href="src/about-us.html">Детальніше<i
-                                        class="fas fa-envelope ml-2"></i></a>
+                                <div id="hide">
+                                    <p class="white-text"><strong>Створення та розробка веб сайтів. Розробка нових та
+                                        підтримка
+                                        існуючих проектів.</strong></p>
+                                    <a class="btn btn-primary btn-lg btn-outline-light waves-effect mt-2"
+                                       href="src/about-us.html">Детальніше<i
+                                            class="fas fa-envelope ml-2"></i></a>
+                                </div>
                             </div>
-                            <div class="col-md-6 mt-2">
+                            <div class="col-md-6 mt-2 wow slideInRight">
                                 <div class="card">
                                     <div class="card-body">
                                         <form>
@@ -124,7 +133,7 @@
                 </div>
             </section>
         </main>
-        <footer class="page-footer fixed-bottom mb-3">
+        <footer class="page-footer fixed-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-light text-left">
@@ -142,24 +151,8 @@
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
-<!--<script>
-  var count_particles, stats, update;
-  stats = new Stats;
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-</script>-->
+<script type="text/javascript">
+    new WOW().init();
+</script>
 </body>
 </html>
